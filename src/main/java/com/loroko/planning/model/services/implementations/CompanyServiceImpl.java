@@ -20,5 +20,12 @@ public class CompanyServiceImpl extends ServiceImpl<Long, Company, CompanyReposi
 				});
 	}
 	
+	public Company findById(Long id){
+		return getRepository().findById(id).orElse(null);
+	}
+	
+	
+	
+	
 	
 }
